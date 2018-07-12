@@ -1,0 +1,81 @@
+{
+  "places": {
+    "p1": {
+      "tokens": 3,
+      "label": "place1"
+    },
+    "p2": {
+      "tokens": 0,
+      "label": "place2"
+    },
+    "p3": {
+      "tokens": 5,
+      "label": "place3"
+    },
+    "p4": {
+      "tokens": 0,
+      "label": "place4"
+    }
+  },
+  "transitions": {
+    "t1": {
+      "inputs": [
+        "p1"
+      ],
+      "outputs": [
+        "p2"
+      ],
+      "label": "transition1"
+    },
+    "t2": {
+      "inputs": [
+        "p3"
+      ],
+      "outputs": [
+        "p4"
+      ],
+      "label": "transition2"
+    },
+    "t3": {
+      "inputs": [
+        "p4"
+      ],
+      "outputs": [
+        "p1"
+      ],
+      "label": "transition3"
+    }
+  },
+  "arcs": {
+    "arc1": {
+      "sourceId": "p1",
+      "targetId": "t1",
+      "value": "1"
+    },
+    "arc2": {
+      "sourceId": "t1",
+      "targetId": "p2",
+      "value": "1"
+    },
+    "arc3": {
+      "sourceId": "p3",
+      "targetId": "t2",
+      "value": "1"
+    },
+    "arc4": {
+      "sourceId": "t2",
+      "targetId": "p4",
+      "value": "1"
+    },
+    "arc5": {
+      "sourceId": "p4",
+      "targetId": "t3",
+      "value": "1"
+    },
+    "arc6": {
+      "sourceId": "t3",
+      "targetId": "p1",
+      "value": "2"
+    }
+  }
+}

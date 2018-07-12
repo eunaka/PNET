@@ -1,0 +1,37 @@
+{
+    "places": {
+        "p1":{
+            "tokens":3,
+            "label":"BufferEntrada",
+            "positionX":174,
+            "positionY":311.5
+        },
+        "p2":{
+            "tokens":0,
+            "label":"RobotOcupado",
+            "positionX":352.9921875,
+            "positionY":304.5
+        }
+    },
+    "transitions": {
+        "t1":{
+            "inputs":["p1"],
+            "outputs":[],
+            "label":"RE#AdicionarPeca",
+            "positionX":81.9921875,
+            "positionY":347.5
+        }
+    },
+    "arcs": {
+        "arc1":{
+            "sourceId":"p1",
+            "targetId":"t1",
+            "value":1
+        },
+        "arc2":{
+            "sourceId":"t1",
+            "targetId":"p2",
+            "value":3
+        }
+    }
+}

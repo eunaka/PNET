@@ -1,0 +1,15 @@
+{
+  "name": "pnet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jison": "^0.4.18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Yuri Nakamora",
+  "license": "ISC"
+}

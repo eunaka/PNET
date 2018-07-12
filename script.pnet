@@ -1,0 +1,19 @@
+{
+  pl1 := Place(3:place1)
+  pl2 := Place(0:place2)
+  tr1 := Transition(transition1)
+  Arc(pl1:tr1:1)
+  Arc(tr1:pl2:1)
+
+  pl3 := Place(5:place3)
+  pl4 := Place(0:place4)
+  tr2 := Transition(transition2)
+  Arc(pl3:tr2:1)
+  Arc(tr2:pl4:1)
+
+  tr3 := Transition(transition3)
+  Arc(pl4:tr3:1)
+  Arc(tr3:pl1:2)
+
+  net := Sequence(3:PLACE)
+}
